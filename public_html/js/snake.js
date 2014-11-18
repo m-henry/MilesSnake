@@ -26,7 +26,7 @@ var restartButton;
 gameInitialize();
 snakeInitialize();
 foodInitialize();
-setInterval(gameLoop, 1000/40);
+setInterval(gameLoop, 1000/60);
 
 /*?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!
  * Game functions
@@ -82,8 +82,8 @@ function gameRestart() {
 
 function snakeInitialize (){
     snake = [];
-    snakeLength = 4;
-    snakeSize = 30;
+    snakeLength = 150;
+    snakeSize = 10;
     snakeDirection = "down";
     
     for(var index = snakeLength - 1; index >= 0; index--) {
